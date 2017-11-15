@@ -38,7 +38,7 @@ One of the limiting factors when programming was the memory size of the chip whi
 Conclusion
 ----------
 
-This was a fun project to work on and the result is in a quite playable condition. The game's development could be continued by adding a high-score counter which is displayed after each game or by housing the controller in a more user friendly case. It should also be noted that now that the system specific issues have been tackled it would be a fairly straightforward operation to port other simple games, such as snake or pong onto the platform. Finally [here](https://vimeo.com/242865040) is a link to a video of the game in action.
+This was a fun project to work on and the result is in a playable condition. The game's development could be continued by adding a high-score counter which is displayed after each game or by housing the controller in a more user friendly case. It should also be noted that now that the system specific issues have been tackled it would be a fairly straightforward operation to port other simple games, such as snake or pong onto the platform. Finally [here](https://vimeo.com/242865040) is a link to a video of the game in action.
 
 
 
