@@ -3,7 +3,7 @@ Tetris
 
 ![screenshot](https://i.imgur.com/ZdGrJmB.png)
 
-A Tetris clone written in C with some inline assembly for an 8-bit Atmel ATmega8515L AVR microcontroller. Project is based on Tampere University of Technology "Introduction to IT" course's LED blinker assignment, so credit for goes partly to the person wrote the original program to control the lights. My part of the work was adding the physical buttons and writing the game specific logic.
+A Tetris clone written in C with some inline assembly for an 8-bit Atmel ATmega8515L AVR microcontroller. Project is based on Tampere University of Technology "Introduction to IT" course's LED blinker assignment, so credit for goes partly to the person who wrote the original program to control the lights. My part of the work was adding the physical buttons and writing the game specific logic.
 
 Click [here](https://vimeo.com/242865040) to see a video of the game in action.
 
