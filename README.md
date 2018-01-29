@@ -35,18 +35,18 @@ The state of the buttons is checked using an available variable which points to 
 ```
 The main function's loop iterates infinitely until the player pushes the power button or the batteries run out of electricity. The state of the buttons is checked at every cycle, but the tetrominos move down roughly once a second. To achieve this a variable called `timer`  is incremented every loop and if it is divisible by 2048 then we update the game logic.
 
-One of the limiting factors when programming was the memory size of the chip which was only 512 bytes. In order to fit the entire game into the allocated space all unnecessary lines from the original blinker project were removed. In addition, to represent each tetromino (which fits inside of a 4 x 4 square) a two byte uint8_int variable was used, where each of the 16 bits represent exactly one square. For example a T shaped block is encoded into the value 114, which in binary is 
+One of the limiting factors when programming was the memory size of the chip which was only 512 bytes. In order to fit the entire game into the allocated space all unnecessary lines from the original blinker project were removed. In addition to this, to represent each tetromino (which fits inside of a 4 x 4 square) a two byte uint8_int variable was used, where each of the 16 bits represent exactly one square. For example a T shaped block is encoded into the value 114, which in binary is 
 ```c
 0b0000000001110010
 ```
-The four least significant bits represent the top row, the four next ones the second row etc. and bitwise operations are used to access each part. As as a result the single uint8_int variable above broken up into lines looks like this:
+The four least significant bits represent the top row, the four next ones the second row etc. and bitwise operations are used to access each part. As as a result the single uint8_int variable above is broken up into lines that looks like this:
 ```c
 0010
 0111
 0000
 0000
 ```
-When rotating a tetromino rather than calculating each bit individually, a series of if-else statements are used to comapre the entire variable against hard-coded values in order to make the program code more straightforward.
+When rotating a tetromino rather than calculating each bit individually, a series of if-else statements are used to compare the entire variable against hard-coded values in order to make the program code more straightforward.
 
 Conclusion
 ----------
