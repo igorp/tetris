@@ -33,7 +33,7 @@ The state of the buttons is checked using an available variable which points to 
     // perform wanted action
   }
 ```
-The main function's loop iterates infinitely until the player pushes the power button or the batteries run out of electricity. The state of the buttons is checked at every cycle, but the tetrominos move down roughly once a second. To achieve this a variable called `timer`  is incremented every loop and if it is divisible by 2048 the we update the game logic.
+The main function's loop iterates infinitely until the player pushes the power button or the batteries run out of electricity. The state of the buttons is checked at every cycle, but the tetrominos move down roughly once a second. To achieve this a variable called `timer`  is incremented every loop and if it is divisible by 2048 then we update the game logic.
 
 One of the limiting factors when programming was the memory size of the chip which was only 512 bytes. In order to fit the entire game into the allocated space all unnecessary lines from the original blinker project were removed. In addition, to represent each tetromino (which fits inside of a 4 x 4 square) a two byte uint8_int variable was used, where each of the 16 bits represent exactly one square. For example a T shaped block is encoded into the value 114, which in binary is 
 ```c
