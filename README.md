@@ -7,6 +7,8 @@ A Tetris clone written in C with some inline assembly for an 8-bit Atmel ATmega8
 
 Click [here](https://vimeo.com/242865040) to see a video of the game in action.
 
+All intellectual rights to the Tetris name and gameplay mechanics belong to Alexey Pajitnov.
+
 Design
 ------
 The game is displayed on a 8 x 16 LED matrix, so that each square represents exactly one light. The area is slightly less than the original game's 10 x 20, but still perfectly playable. Input consists of three physical buttons: move left, move right and rotate clockwise. Rotation in the counterclockwise direction was ommited to simplify design and the physical structure. 
