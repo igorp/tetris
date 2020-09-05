@@ -206,7 +206,7 @@ int main() {
     return 0;
 }
 
-// Creates a new block and puts up to the top.
+// Creates a new block and puts it to the top.
 void drop_block_from_sky() {
     int r = rand() % 7;
     switch(r) {
