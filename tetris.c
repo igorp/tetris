@@ -373,7 +373,7 @@ void check_for_full_rows() {
     }
 }
 
-// Resets score, game speed and clear the game area.
+// Resets the score, game speed and clears the game area.
 void reset_game() {
     score = 0;
     update_score(); 
