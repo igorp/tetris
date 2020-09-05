@@ -155,7 +155,7 @@ int main() {
             // move current block down
             block_location_y++;
 
-            // check if black has hit bottom or another piece
+            // check if block has hit bottom or another piece
             if(current_block_is_in_illegal_position()) {
                 block_location_y--;
                 solidify_current_block();
